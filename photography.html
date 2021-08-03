@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Rithi's Photography</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+<body>
+    <!--nav bar-->  
+  <header>
+    <a class="logo" href="index.html"><img src="R.png" alt="logo style=" style = "object-fit:scale-down;
+      width:100px;
+      height:40px;"/></a>
+    <nav>
+      <ul class = "navBar">
+        <!--
+        <li>
+          <a href="experience.html"> EXPERIENCE </a>
+        </li>
+        -->
+        <li>
+          <a href="experience.html"> RESUME </a>
+        </li>
+        <li>
+          <a href="photography.html"> PHOTOGRAPHY </a>
+        </li>
+      </ul>
+    </nav>
+    <a class ="cta" href ="contact.html">CONTACT</a>
+  </header>
+
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="nishi.JPG" style="width:100%">
+      <div class="text">Nishita - Detroit, MI</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="miffy.JPG" style="width:100%">
+      <div class="text">Kappa Theta Pi Headshots - Miffy Tani</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="shei.JPG" style="width:100%">
+      <div class="text">SHEI Magazine - Saudade</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+  </script>
+
+  <div class="photographyblurb"> 
+      <h2>Thank you for your interest in my photography!</h2>
+      <p>Photography is one of my greatest passions - I love capturing moments to appreciate the beauty of the world we live in and the people we're surrounded by.</p>
+      <p>I'm currently a photographer for SHEI Magazine at the University of Michigan.</p>
+      <p>If you're interested in more of my work please feel free to view my full portfolio below or view my instagram by clicking here.</p>
+      <button>
+        <a href="https://rithiv.myportfolio.com">PORTFOLIO</a>
+      </button>
+  </div>
+
+
+</body>
+
+</html>
